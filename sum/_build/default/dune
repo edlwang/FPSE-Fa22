@@ -1,4 +1,0 @@
-(executable
- (name sum)
- (modules sum)
- (libraries core stdio))
