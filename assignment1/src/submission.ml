@@ -54,11 +54,10 @@ let lcm (n : int) (m : int) : int = n * m / gcd n m
 	Given a non-negative integer `n`, compute the n-th fibonacci number.	Give an implementation that does not take exponential time; the naive version from lecture is exponential	since it has two recursive calls for each call.
 *)
 
-
 let rec fib_acc (n : int) (a : int) (b : int) : int =
   match n with 0 -> b | _ -> fib_acc (n - 1) (b + a) a
 
-let fibonacci (n : int) : int = fib_acc n 1 0 
+let fibonacci (n : int) : int = fib_acc n 1 0
 
 (*
 	Part I Section 2: building lists. The List. module functions may NOT be used (yet).
@@ -334,4 +333,3 @@ let verify_towers_solution (grid : int list list)
     in
     solved
   else false
-
